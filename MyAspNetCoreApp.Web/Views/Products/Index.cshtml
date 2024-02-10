@@ -3,6 +3,13 @@
     ViewData["Title"] = "Index";
 }
 
+@if (TempData["status"]!=null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["status"]
+    </div>
+}
+
 <h1>Ürünler</h1>
 
 <table class="table table-bordered">
@@ -39,4 +46,8 @@
 <br />
 
 <a class="btn btn-primary" asp-controller="Products" asp-action="Add">Ürün Ekle</a>
+<a class="btn btn-primary" asp-controller="Products" asp-action="Add">Ürün Ekle</a>
+<a class="btn btn-primary" asp-controller="Products" asp-action="Add">Ürün Ekle</a>
+<a class="btn btn-primary" asp-controller="Products" asp-action="Add">Ürün Ekle</a>
+
 

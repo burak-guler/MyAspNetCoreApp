@@ -37,14 +37,53 @@ namespace MyAspNetCoreApp.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
         public IActionResult Add() 
         {
             return View();  
         }
+        [HttpPost]
+        public IActionResult Add(string Name, decimal Price, int Stok, string Color, int Width, int Height)
+        {
+            //1.yöntem
 
+            //var name = HttpContext.Request.Form["Name"].ToString();
+            //var price = decimal.Parse( HttpContext.Request.Form["Price"].ToString());
+            //var stock =int.Parse( HttpContext.Request.Form["Stock"].ToString());
+            //var color = HttpContext.Request.Form["Color"].ToString();
+            //var width =int.Parse( HttpContext.Request.Form["Width"].ToString());
+            //var height =int.Parse( HttpContext.Request.Form["Height"].ToString());
+
+            Product newProduct = new Product()
+            {
+                Name= Name,
+                Price= Price,    
+                Stock= Stok,    
+                Color= Color,
+                Width= Width,
+                Height= Height
+            };
+
+            _context.Products.Add(newProduct);
+            _context.SaveChanges();
+            TempData["status"] = "Ürün Başarı bir şekilde Eklendi!!";
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
         public IActionResult Update(int id) 
         {
-            return View();
+            var product = _context.Products.Find(id);
+            return View(product);
+        }
+        [HttpPost]
+        public IActionResult Update(Product product)
+        {
+            _context.Products.Update(product);
+            _context.SaveChanges();
+            TempData["status"] = "Ürün Başarı bir şekilde güncellendi!!";
+            return RedirectToAction("Index");
         }
     }
 }

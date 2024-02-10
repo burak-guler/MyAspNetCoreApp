@@ -11303,19 +11303,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
+    "C:\\Users\\BURAK\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Core MVC Egitimi\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\MyAspNetCoreApp.Web.csproj",
+      "projectUniqueName": "C:\\Users\\BURAK\\Desktop\\Core MVC Egitimi\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\MyAspNetCoreApp.Web.csproj",
       "projectName": "MyAspNetCoreApp.Web",
-      "projectPath": "C:\\Users\\LENOVO\\Desktop\\Core MVC Egitimi\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\MyAspNetCoreApp.Web.csproj",
-      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\Desktop\\Core MVC Egitimi\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\obj\\",
+      "projectPath": "C:\\Users\\BURAK\\Desktop\\Core MVC Egitimi\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\MyAspNetCoreApp.Web.csproj",
+      "packagesPath": "C:\\Users\\BURAK\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BURAK\\Desktop\\Core MVC Egitimi\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BURAK\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11323,7 +11323,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11384,7 +11383,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
